@@ -1,0 +1,75 @@
+allprojects {
+  group = 'deco2800-2016-ducktales'
+  version = '0.1'
+
+}
+
+repositories {
+  maven { url 'http://deco2800.uqcloud.net/artifactory/libs-release/' }
+  //mavenCentral()
+  mavenLocal()
+}
+
+subprojects {
+  apply plugin: 'java';
+  apply plugin: 'eclipse';
+  apply plugin: 'idea';
+  apply plugin: 'application';
+  apply plugin: 'jacoco';
+
+  jacoco {
+        toolVersion = "0.7.7.201606060606"
+  }
+
+  test {
+    jacoco {
+        append = false
+        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+    }
+  }
+
+  tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+  }
+
+  javadoc {
+    options.tags = ['require', 'ensure']
+  }
+
+  mainClassName = "uq.deco2800.ducktales.DuckTalesLauncher"
+
+  repositories {
+    maven { url 'http://deco2800.uqcloud.net/artifactory/libs-release/' }
+    //mavenCentral()
+    mavenLocal()
+  }
+
+  dependencies {
+    // Logging via Log4J 2.0 using the SLF4J API
+    compile group: 'org.slf4j', name:'slf4j-api', version: '1.7.12'
+    compile group: 'org.slf4j', name:'slf4j-log4j12', version: '1.7.12'
+
+    // Unit testing with JUnit
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+  }
+
+  sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'src/test/java'
+        }
+        resources {
+            srcDir 'src/test/resources'
+        }
+    }
+  }
+}
