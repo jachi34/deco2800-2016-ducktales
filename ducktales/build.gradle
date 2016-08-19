@@ -1,0 +1,10 @@
+
+dependencies {
+  
+}
+
+task(run2, dependsOn: "classes", type: JavaExec) {
+   main = "uq.deco2800.ducktales.DuckTalesLauncher"
+   classpath = sourceSets.main.runtimeClasspath
+}
+

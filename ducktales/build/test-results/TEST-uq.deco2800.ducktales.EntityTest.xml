@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uq.deco2800.ducktales.EntityTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-08-18T05:00:17" hostname="d-i89-210-65.student.eduroam.uq.edu.au" time="0.012">
+  <properties/>
+  <testcase name="basicTest" classname="uq.deco2800.ducktales.EntityTest" time="0.01"/>
+  <testcase name="adjacentTest2" classname="uq.deco2800.ducktales.EntityTest" time="0.001"/>
+  <testcase name="adjacentTestMiddle" classname="uq.deco2800.ducktales.EntityTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uq.deco2800.ducktales.ThreatsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-08-18T05:00:17" hostname="d-i89-210-65.student.eduroam.uq.edu.au" time="0.0">
+  <properties/>
+  <testcase name="test" classname="uq.deco2800.ducktales.ThreatsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
