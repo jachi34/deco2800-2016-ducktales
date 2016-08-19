@@ -1,3 +1,5 @@
-# deco2800-2016-ducktales
+###deco2800-2016-ducktales
 
-README
+Ducktales is not a rollercoaster game.
+
+
